@@ -1,25 +1,7 @@
 # iMessageGroupChatAnalyzer
-Welcome to the iMessage Group Chat Analyzer. This python script will allow you to analyze your group chat's tapback (likes, dislikes, etc.) habits. 
+This python script was created to analyze a group chat's tapback (likes, dislikes, etc.) habits. 
+It is a fairly simple script that combines Apple's chat database, address book, and some logic to display results.
 
-Requirements:
-1) An Apple computer to run this script on
-2) iCloud for iMessage enabled on this decive
-3) Full disk access for Terminal
-4) Python 3
+This idea originally came to me when my friend's and I were discussing who was the funniest out of the group. I figured there must be a way to determine this based on facts. After a little digging, I found a way to query my chat data and find out who really was the funniest in the group. Upon sending these stats, the idea to analyze all the tapback data led me to create this more in depth script that shows tapbacks sent and recieved for any given member in any given group chat. 
 
-Setup:
-1. Ensure full disk access for terminal
-
-1a. Follow these steps if you don't know how to do this
-
-2. In order to have a cleaner output, you will want to allow access to your contacts
-  
-2a. Navigate to ~/Library/Application Support/AddressBook/Sources/ and find the largest folder. It should be named similar to '6A3869D0-3BC4-41E2-B14B-303DDD547254'
- 
-2b. Open chatanalyzer.py and change line 123 with your folder name. This will allow your contacts to map to phone numbers.
-
-Instructions:
-1) Clone this single-file repo anywhere on your Mac computer
-2) Right click on the location it resides and 'New Terminal at Folder'
-3) Type 'python3 chatanalyzer.py'
-4) Follow the inline instructions to see your group message stats!
+There are infinite ways to build on top of this, as this is just the start. Please feel free to use any or all of this code to analyze your own group chats and finally prove who is the funniest (or most 'loved') once and for all!
